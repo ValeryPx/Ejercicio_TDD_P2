@@ -15,7 +15,7 @@
         "events": [{
             "function": "apps.f",
             "event_source": {
-                  "arn":  "arn:aws:s3:::pruebaval1",
+                  "arn":  "arn:aws:s3:::buckettdd1",
                   "events": [
                     "s3:ObjectCreated:*" // Supported event types: http://docs.aws.amazon.com/AmazonS3/latest/dev/NotificationHowTo.html#supported-notification-event-types
                   ]
