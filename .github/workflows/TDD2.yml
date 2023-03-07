@@ -30,6 +30,7 @@ jobs:
           
       - name: install requirements and run tests
         run: |
+          source env/bin/activate
           pip install -r requirements.txt
           
       - name: Configure aws credentials
@@ -42,9 +43,5 @@ jobs:
 
       - name: zappa
         run: |
-          source env/bin/activate
-          pip install zappa
-          
-          zappa init
-          zappa deploy dev
+        
           zappa invoke apps.f
